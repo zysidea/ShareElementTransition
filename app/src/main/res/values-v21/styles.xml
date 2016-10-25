@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!--开启窗口内容移动-->
+        <item name="android:windowContentTransitions">true</item>
+
+    </style>
+</resources>
