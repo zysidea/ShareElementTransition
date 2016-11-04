@@ -44,9 +44,9 @@ public class MainActivity extends AppCompatActivity {
                     View newSharedElement=mFragment.getNewSharedElement(currentPosition);
                     if (newSharedElement != null) {
                         names.clear();
-                        names.add(Constant.transitionName+currentPosition);
+                        names.add(Constant.TRANSITION_NAME +currentPosition);
                         sharedElements.clear();
-                        sharedElements.put(Constant.transitionName+currentPosition, newSharedElement);
+                        sharedElements.put(Constant.TRANSITION_NAME +currentPosition, newSharedElement);
                     }
                 }
                 mTmpReenterState = null;

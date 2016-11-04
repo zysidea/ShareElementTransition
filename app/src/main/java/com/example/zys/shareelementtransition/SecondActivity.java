@@ -19,7 +19,7 @@ import android.widget.ImageView;
 import java.util.List;
 import java.util.Map;
 
-import static com.example.zys.shareelementtransition.Constant.sImageArray;
+import static com.example.zys.shareelementtransition.Constant.IMAGE_ARRAY;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -101,8 +101,8 @@ public class SecondActivity extends AppCompatActivity {
         public Object instantiateItem(ViewGroup container, int position) {
             View view = mLayoutInflater.inflate(R.layout.item_viewpager, container, false);
             mImageView = (ImageView) view.findViewById(R.id.item_imageview);
-            mImageView.setTransitionName(Constant.transitionName + position);
-            Drawable drawable = getResources().getDrawable(sImageArray[position]);
+            mImageView.setTransitionName(Constant.TRANSITION_NAME + position);
+            Drawable drawable = getResources().getDrawable(IMAGE_ARRAY[position]);
             mImageView.setImageDrawable(drawable);
             if (position == mStartPosition) {
                 mImageView.getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
@@ -131,7 +131,7 @@ public class SecondActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return Constant.sImageArray.length;
+            return Constant.IMAGE_ARRAY.length;
         }
 
         @Override

@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 
-import static com.example.zys.shareelementtransition.Constant.sImageArray;
+import static com.example.zys.shareelementtransition.Constant.IMAGE_ARRAY;
 
 /**
  * Created by zys on 16/11/3.
@@ -83,7 +83,7 @@ public class MainFragment extends Fragment {
 
         @Override
         public int getItemCount() {
-            return Constant.sImageArray.length;
+            return Constant.IMAGE_ARRAY.length;
         }
 
 
@@ -96,9 +96,9 @@ public class MainFragment extends Fragment {
 
         @Override
         public void onBindViewHolder(MyViewHolder holder, int position) {
-            Drawable drawable = getActivity().getResources().getDrawable(sImageArray[position]);
+            Drawable drawable = getActivity().getResources().getDrawable(IMAGE_ARRAY[position]);
             holder.imageView.setImageDrawable(drawable);
-            holder.imageView.setTransitionName( Constant.transitionName+ position);
+            holder.imageView.setTransitionName( Constant.TRANSITION_NAME + position);
             holder.imageView.setTag("tag" + position);
 
         }

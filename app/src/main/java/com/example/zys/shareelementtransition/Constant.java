@@ -10,11 +10,11 @@ import static com.example.zys.shareelementtransition.R.drawable.image4;
 
 public class Constant {
 
-    public static final int sImageArray[]={
+    public static final int IMAGE_ARRAY[]={
         R.drawable.image1, image2,
         image3, image4
     };
-    public static final String transitionName="image";
+    public static final String TRANSITION_NAME ="image";
 
     public static final String EXTRA_START_POSITION="extra_start_position";
     public static final String EXTRA_CURRENT_POSITION="extra_current_position";
