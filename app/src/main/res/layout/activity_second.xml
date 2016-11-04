@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:id="@+id/rpp"
     android:fitsSystemWindows="true"
-    tools:context="com.example.zys.shareelement.SecondActivity">
+    tools:context="com.example.zys.shareelementtransition.SecondActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

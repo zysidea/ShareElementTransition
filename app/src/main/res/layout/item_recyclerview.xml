@@ -3,6 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/colorAccent"
     android:layout_marginBottom="8dp">
 
     <ImageView
@@ -11,15 +14,5 @@
         android:layout_height="100dp"
         android:scaleType="centerCrop"
         android:src="@drawable/image1"/>
-
-    <TextView
-        android:layout_alignRight="@+id/item_imageview"
-        android:layout_alignParentRight="true"
-        android:id="@+id/item_textview"
-        android:textSize="20sp"
-        android:gravity="center"
-        android:text="image1"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"/>
 
 </RelativeLayout>
