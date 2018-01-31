@@ -1,3 +1,3 @@
 Share element form RecyclerView to ViewPager
 
-一个从RecyclerView跳转到ViewPager的共享元素动画
+从RecyclerView跳转到ViewPager的共享元素动画
